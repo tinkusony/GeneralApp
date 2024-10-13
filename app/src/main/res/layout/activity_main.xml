@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1FFF3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btElevated"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@android:color/background_light"
+        android:focusable="true"
+        android:text="Elevated Button"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btFilled"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:focusable="true"
+        android:text="shrink on scroll"
+        app:layout_constraintEnd_toEndOf="@+id/btElevated"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/btElevated"
+        app:layout_constraintTop_toBottomOf="@+id/btElevated" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btTonal"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:focusable="true"
+        android:text="Tonal Button"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/btFilled"
+        app:layout_constraintStart_toStartOf="@+id/btFilled"
+        app:layout_constraintTop_toBottomOf="@+id/btFilled" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btOutlined"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:focusable="true"
+        android:text="hide fab"
+        app:layout_constraintEnd_toEndOf="@+id/btTonal"
+        app:layout_constraintStart_toStartOf="@+id/btTonal"
+        app:layout_constraintTop_toBottomOf="@+id/btTonal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btText"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="extend fab"
+        app:layout_constraintEnd_toEndOf="@+id/btOutlined"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/btOutlined"
+        app:layout_constraintTop_toBottomOf="@+id/btOutlined" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/normalFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btText"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extendedFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Resulation"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_2k"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btText"
+        app:layout_constraintVertical_bias="0.825" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
